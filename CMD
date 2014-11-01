@@ -1,0 +1,211 @@
+
+
+
+
+• Project Management Plan
+• Software Requirements Specification
+• Object Oriented Design and Analysis(class,use case,sequential diagrams) • Functional Code
+
+
+
+SOFTWARE PROJECT MANAGEMENT PLAN
+Purpose, Scope, and Objectives:
+The purpose of this Courier Company Computerization is to computerize vari-
+ous book keeping activities associated with its daily operation. The courier company has branches in most important towns in India. It is proposed that the different branch offices be equipped with a computer and printer each. The Courier Company Computerization can be used by different Corporation .The Corporations are interested in maximum truck utilization—the consignment idle time, revenue generated etc.. 
+.
+Management and Technical Constraints:
+The project must be developed in 4 months time.This project will use resources in the form of time and effort. This software must run on a LINUX machine.
+Project Deliverables: The list of project deliverables is:
+
+
+• Project Management Plan
+• Software Requirements Specification
+• Object Oriented Design and Analysis (class,use case,sequential diagrams) • Functional Code
+• Test Plan
+• Complete Report Project Estimates :
+• Budget Summary : “ No Budget required “
+• Duration Summary : Size Estimation :-The entire software is expected to consist of 1500 LOC. Calculated based number of inputs and interfaces.
+ 
+
+
+
+Courier company computerization (CCC) software:
+
+
+SOFTWARE REQUIREMENTS SPECIFICATION
+
+
+ FUNCTIONAL REQUIREMENTS:
+
+
+
+
+1. Booking a Consignment
+
+
+1.1:-Consignment booking by a customer
+
+
+Input: volume, weight of the consignment, destination address, sender address
+
+Process: Charge of the Consignment is calculated based on it’s weight,volume,distance to be travelled.An ID is generated.
+
+Output: A Bill containing Consignment ID,Charge of Consignment
+
+1.2:-Only those packets having destination to a city where a branch office is located should be accepted.
+
+
+
+
+2.Management of trucks
+ 
+
+
+2.1:- Allot next available truck ,if the volume of consignments for any particular destination (branch office) becomes 500 cubic meters.
+
+
+2.2:- Print the details of all consignments of a truck that is ready for dispatch.
+
+Input: Consignment numbers,volume,sender’s name and address,receiver’s name and address
+
+Output: Printout with all the details of Consignments in that truck
+
+2.3:- Updating the arrival status of a truck
+
+
+2.4:- Storing the fuel and repair charges of a truck entered by the transport office at the branch
+
+
+
+
+3. Employee details
+
+
+3.1:- Should maintain the details of each employee such as his name, address, telephone number,basic pay, and other allowances.
+
+3.2:-Accnt manager should be able to use these details and to generate the pay slip of all the employees every
+ 
+
+
+month and automatically credit the salaries to their respective bank accounts
+
+
+
+
+4.Manager abilities
+
+
+4.1:- View the status of trucks Input: Truck number
+Output: Branch at which it is waiting or two branch offices between which it is currently transporting consignments.
+4.2:- View Truck usage
+
+4.2.1:- Overall truck usage in a period of time Input: Period of time
+Output: Number of kilometers covered,average capacity utilization
+4.2.2:-Individual truck usage Input: Truck number
+Output: Number of kilometers covered
+
+
+
+4.3:-Queries regarding consignments 4.3.1:- Status of a Consignment
+Input: Consigment ID
+
+Output: Status of the particular consignment,whether it is delivered if not where it is
+ 
+
+
+4.3.2:- Volume transported between two branches,corresponding revenue generated
+Input: The required two branch names Output: Volume transported, revenue
+generated
+
+
+4.4:- View Average waiting period for the consignments, average idle times of trucks
+4.4.2:- Average waiting period for the consignments, over a given period of time and that for various source destination pairs
+Input: period of time,destination pairs Output: Average waiting period for the
+consignments
+
+4.4.3:- Average idle times of trucks Input: period of time,truck number
+Output: average idle times of that truck in that period of time
+
+
+4.5:- View Revenue generated,Consignments handled,expenses
+Input: Branch name
+
+Output: Revenue generated,Consignments handled,expenses
+ 
+
+
+5. Payment,receipt details
+
+5.1:- Storing payment,receipts that are entered 5.2:- A consolidated profit-loss account ,taking all
+the branches and the entire operation into account should be calculated
+
+
+NON FUNCTIONAL REQUIREMENTS:
+
+
+
+1.Security:- The profiles of Manager,Account Manager should be protected with a password.
+2.The Data bases should be maintained properly,so that no data is lost.
+3.software should be modular and highly configurable, as the company wishes to sell it to other courier companies also
+4.Software should be easy to change in order to meet any future requirements
+5. proper Internet connection must be made available without any fault
+ 
+
+Data Dictionary
+
+
+1. Consignment details = volume+ weight+destination address+ sender address
+
+2. required details = status of consignment|waiting time response|revenue generated|status of truck|idle time response |truck usage
+
+3. show details = consignment ID | waiting time request |revenue request | truck number | idle time request
+
+4.Employee details = name+address+ telephone number+basic pay
+
+
+5.reqiured information = status of consignment | delivery status| volume of consignments of a destination | waiting time response
+
+6.required truck information = truck status|truck usage| idle time response
+
+7.idle time request = period of time
+
+
+8.waiting time request = destination pairs + period of time
+
+9.revenue request = branch name + period of time
+ 
+
+
+10.printout of consignment details = consignment numbers+volume+ sender’s name
+and address+ receiver’s name and address
+
+
+11.pay slip = date+amount
+ 
+
+
+
+
+
+
+Goodness Criteria
+
+
+Self evaluation : 4.0/5.0
+
+
+
+Top down approach is applied here to develop the system as the specifications of the system were clearly known .
+
+The coupling between modules is low because ,the number of interfaces per module and complexity of each interface is kept minimum.Also the type of communication between modules is mainly data.
+
+The cohesion of the modules is high because,all the modules are functionally bound ,with all elements of the module are related to performing a single function.
+
+The design is modular,because each component comprising the design can be implemented separately and each module has a clear interface through which it can interact with other modules
+
+The design is complete,because each element can be associated with some requirement.
+ 
+
+
+
+
